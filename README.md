@@ -10,9 +10,9 @@ I. replace **/DOWNLOAD_DIR** and **/CONFIG_DIR** for save data, and **YOUR_SECRE
 ```
 sudo docker run -d \
 --name aria2-with-webui \
--p 6800:6800 \
--p 6880:80 \
--p 6888:8080 \
+-p 18082:18082 \
+-p 18080:18080 \
+-p 18081:18081 \
 -v /DOWNLOAD_DIR:/data \
 -v /CONFIG_DIR:/conf \
 -e SECRET=YOUR_SECRET_CODE \
